@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+   <file source-language="en" target="de" datatype="plaintext" original="messages" date="2020-02-11T00:00:00Z" product-name="wb_wmc">
+      <header/>
+      <body>
+         <trans-unit id="contentlink" xml:space="preserve">
+            <target>Verlinkung des gesamten Inhaltselements</target>
+         </trans-unit>
+         <trans-unit id="link" xml:space="preserve">
+            <target>Link</target>
+         </trans-unit>
+
+         <trans-unit id="cols" xml:space="preserve">
+            <target>Spalten</target>
+         </trans-unit>
+         <trans-unit id="background" xml:space="preserve">
+            <target>Hintergrund</target>
+         </trans-unit>
+         <trans-unit id="none" xml:space="preserve">
+            <target>Keiner</target>
+         </trans-unit>
+         <trans-unit id="backgroundimage" xml:space="preserve">
+            <target>Hintergrundbild</target>
+         </trans-unit>
+         <trans-unit id="parallaximage" xml:space="preserve">
+            <target>Parallaxbild</target>
+         </trans-unit>
+         <trans-unit id="tiles" xml:space="preserve">
+            <target>Als Kacheln darstellen</target>
+         </trans-unit>
+         <trans-unit id="slider" xml:space="preserve">
+            <target>Als Slider darstellen</target>
+         </trans-unit>
+         <trans-unit id="slidestoshow" xml:space="preserve">
+            <target>Anzahl der anzuzeigenden Slides</target>
+         </trans-unit>
+         <trans-unit id="accordion" xml:space="preserve">
+            <target>Als Accordion darstellen</target>
+         </trans-unit>
+         <trans-unit id="fullwidth" xml:space="preserve">
+            <target>Volle Breite</target>
+         </trans-unit>
+
+         <trans-unit id="display" xml:space="preserve">
+            <target>Darstellung</target>
+         </trans-unit>
+         <trans-unit id="parallaximage" xml:space="preserve">
+            <target>Parallaxbild</target>
+         </trans-unit>
+         <trans-unit id="effects" xml:space="preserve">
+            <target>Effekte</target>
+         </trans-unit>
+         <trans-unit id="ease" xml:space="preserve">
+            <target>Ease-Effekt beim Hovern</target>
+         </trans-unit>
+
+         <trans-unit id="tiles.title" xml:space="preserve">
+            <target>Kacheln</target>
+         </trans-unit>
+         <trans-unit id="tiles.description" xml:space="preserve">
+            <target>Setzt mehrere Kacheln nebeneinander.</target>
+         </trans-unit>
+
+         <trans-unit id="parallax.title" xml:space="preserve">
+            <target>Parallax</target>
+         </trans-unit>
+         <trans-unit id="parallax.description" xml:space="preserve">
+            <target>Zeigt Inhaltselemente mit Parallax-Effekt.</target>
+         </trans-unit>
+
+         <trans-unit id="slider.description" xml:space="preserve">
+            <target>Zeigt Inhaltselemente innerhalb eines Sliders.</target>
+         </trans-unit>
+         <trans-unit id="sliderfullwidth" xml:space="preserve">
+            <target>Slider volle Breite</target>
+         </trans-unit>
+
+         <trans-unit id="contentelements" xml:space="preserve">
+            <target>Inhaltselemente</target>
+         </trans-unit>
+
+         <trans-unit id="container.display.title" xml:space="preserve">
+            <target>Besondere Darstellung</target>
+         </trans-unit>
+         <trans-unit id="container.display.description" xml:space="preserve">
+            <target>Alle Inhaltselemente in diesem Container können besonders dargestellt werden.</target>
+         </trans-unit>
+         <trans-unit id="container.grid-50-50.title" xml:space="preserve">
+            <target>Grid 50/50</target>
+         </trans-unit>
+         <trans-unit id="container.grid-50-50.description" xml:space="preserve">
+            <target>Container zur Aufteilung von Inhaltselementen in zwei Spalten (50/50).</target>
+         </trans-unit>
+         <trans-unit id="container.grid-30-70.title" xml:space="preserve">
+            <target>Grid 30/70</target>
+         </trans-unit>
+         <trans-unit id="container.grid-30-70.description" xml:space="preserve">
+            <target>Container zur Aufteilung von Inhaltselementen in zwei Spalten (30/70).</target>
+         </trans-unit>
+         <trans-unit id="container.grid-70-30.title" xml:space="preserve">
+            <target>Grid 70/30</target>
+         </trans-unit>
+         <trans-unit id="container.grid-70-30.description" xml:space="preserve">
+            <target>Container zur Aufteilung von Inhaltselementen in zwei Spalten (70/30).</target>
+         </trans-unit>
+
+         <trans-unit id="rte_stylesSet.smaller" xml:space="preserve">
+            <target>Kleinere Schrift</target>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_page_in_same_tab" xml:space="preserve">
+            <target>Öffnet die Seite im selben Tab.</target>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_file_in_new_tab" xml:space="preserve">
+            <target>Öffnet die Datei in einem neuen Tab.</target>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_page_in_new_tab" xml:space="preserve">
+            <target>Öffnet die Seite in einem neuen Tab.</target>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_your_mail_program" xml:space="preserve">
+            <target>Öffnet das E-Mail-Programm.</target>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_your_phone_service" xml:space="preserve">
+            <target>Öffnet die Telefon App oder den Telefonie-Service.</target>
+         </trans-unit>
+         <trans-unit id="rte_class.btn" xml:space="preserve">
+            <target>Button</target>
+         </trans-unit>
+         <trans-unit id="rte_class.btn-full-width" xml:space="preserve">
+            <target>Button volle Breite</target>
+         </trans-unit>
+
+         <trans-unit id="tceform.layout.10" xml:space="preserve">
+            <target>Infobox</target>
+         </trans-unit>
+         <trans-unit id="tceform.layout.20" xml:space="preserve">
+            <target>Mitgliederstimme</target>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

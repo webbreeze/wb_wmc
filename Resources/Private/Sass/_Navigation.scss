@@ -1,0 +1,114 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  &.navbar-expand-md {
+    .navbar-toggler {
+      width: auto;
+      padding: 0;
+      display: block;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      background-color: transparent;
+      border: none;
+
+      .navbar-toggler-text {
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+      }
+    }
+
+    .navbar-collapse.show {
+      width: auto;
+      padding: 0;
+      display: block;
+      position: absolute;
+      top: 6rem;
+      text-align: right;
+      background-color: #fff;
+      width: 100%;
+      z-index: 999;
+    }
+  }
+
+  #mainmenu {
+    font-size: 30px;
+
+    .navbar-nav {
+      padding-inline-end: 2rem;
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+      border-color: #00f1f1;
+      padding-bottom: 25px;
+      margin-block-end: 0;
+
+      .nav-item {
+        list-style-type: none;
+
+        &.dropdown {
+          .dropdown-menu {
+            display: none;
+            font-size: 20px;
+          }
+
+          &.active {
+            .dropdown-menu {
+              display: block;
+            }
+          }
+        }
+
+        .nav-link {
+          color: #7be7eb;
+          text-decoration: none;
+
+          &:hover {
+            color: #55a0a2;
+          }
+        }
+
+        &.active {
+          .nav-link {
+            color: #40ebe4;
+          }
+        }
+      }
+    }
+  }
+
+  .collapse:not(.show) {
+    display: none;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  nav.navbar-expand-md {
+    display: flex;
+    position: initial;
+    width: 300px;
+    min-width: 300px;
+    padding-inline-end: 1rem;
+
+    .navbar-toggler {
+      display: none;
+    }
+
+    .navbar-collapse {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+
+      .navbar-nav {
+        border-color: transparent !important;
+      }
+    }
+  }
+}

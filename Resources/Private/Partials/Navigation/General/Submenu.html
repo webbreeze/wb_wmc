@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<ul class="dropdown-menu">
+    <f:for each="{submenu}" as="subitem">
+        <f:render partial="Navigation/General/Elements/Item" arguments="{subitem: subitem, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+        <f:if condition="{subitem.children}">
+            <f:render partial="Navigation/General/Submenu" arguments="{submenu: subitem.children, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+        </f:if>
+        </li>
+    </f:for>
+</ul>
+
+</html>

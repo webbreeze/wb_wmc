@@ -1,0 +1,24 @@
+{
+  "name": "webbreeze/wb_wmc",
+  "description": "This extension is responsible for all custom content elements and the container configuration.",
+  "type": "typo3-cms-extension",
+  "keywords": ["TYPO3 CMS", "WebBreeze", "Content elements"],
+  "homepage": "https://webbreeze.de",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "b13/container": "^2.3"
+  },
+  "replace": {
+    "webbreeze/wb_wmc": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "WebBreeze\\WbWmc\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "wb_wmc"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+TCEFORM {
+    tt_content {
+        layout {
+            addItems {
+                10 = LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:tceform.layout.10
+                20 = LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:tceform.layout.20
+            }
+            removeItems = 1,2,3
+        }
+    }
+}

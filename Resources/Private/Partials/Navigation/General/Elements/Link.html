@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{item}">
+    <f:if condition="{item.data.target}">
+        <f:then>
+            <a class="nav-link{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-toggle')}" href="{item.link}" target="{item.data.target}" title="{item.data.title}" data-toggle="{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:'dropdown-toggle')}">
+        </f:then>
+        <f:else if="{item.target}">
+            <a class="nav-link{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-toggle')}" href="{item.link}" target="{item.target}" title="{item.data.title}" data-toggle="{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:'dropdown-toggle')}">
+        </f:else>
+        <f:else>
+            <a class="nav-link{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-toggle')}" href="{item.link}" title="{item.data.title}" data-toggle="{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:'dropdown-toggle')}">
+        </f:else>
+    </f:if>
+    <span>{item.title}</span>
+    </a>
+</f:if>
+<f:if condition="{subitem}">
+    <f:if condition="{subitem.data.target}">
+        <f:then>
+            <a class="nav-link dropdown-item{{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-toggle')}" href="{subitem.link}" target="{subitem.data.target}" title="{subitem.data.title}" data-toggle="{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0', then:'dropdown-toggle')}">
+        </f:then>
+        <f:else if="{subitem.target}">
+            <a class="nav-link dropdown-item{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-toggle')}" href="{subitem.link}" target="{subitem.target}" title="{subitem.data.title}" data-toggle="{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0' then:'dropdown-toggle')}">
+        </f:else>
+        <f:else>
+            <a class="nav-link dropdown-item{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-toggle')}" href="{subitem.link}" title="{subitem.data.title}" data-toggle="{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0', then:'dropdown-toggle')}">
+        </f:else>
+    </f:if>
+    <span>{subitem.title}</span>
+    </a>
+</f:if>
+
+</html>

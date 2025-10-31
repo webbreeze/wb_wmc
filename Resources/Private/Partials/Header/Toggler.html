@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="{f:translate(key:'{locallang}toggleMainNavigation')}">
+    <f:if condition="{menuIconPath}">
+        <span class="navbar-toggler-icon">
+            <f:image src="{menuIconPath}" alt="" width="30" />
+        </span>
+    </f:if>
+    <span class="navbar-toggler-text">
+        <f:translate key="{locallang}menu"/>
+    </span>
+</button>
+
+</html>

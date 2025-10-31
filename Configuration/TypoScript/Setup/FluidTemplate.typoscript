@@ -1,0 +1,7 @@
+page {
+    10 {
+        templateRootPaths.10 = EXT:wb_wmc/Resources/Private/Templates/
+        partialRootPaths.10 = EXT:wb_wmc/Resources/Private/Partials/
+        layoutRootPaths.10 = EXT:wb_wmc/Resources/Private/Layouts/
+    }
+}

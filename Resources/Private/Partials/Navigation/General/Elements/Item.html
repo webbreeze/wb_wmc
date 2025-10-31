@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{item}">
+    <f:if condition="{item.spacer} || {item.current}">
+        <f:then>
+            <li class="nav-item{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown')} {f:if(condition:item.current, then:'active')}{f:if(condition:item.spacer, then:' spacer')}">
+                <f:render partial="Navigation/General/Elements/Link" arguments="{item: item, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+        </f:then>
+        <f:else if="{item.active}">
+            <li class="nav-item{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown')} {f:if(condition:item.active, then:'active')}">
+                <f:render partial="Navigation/General/Elements/Link" arguments="{item: item, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+        </f:else>
+        <f:else>
+            <li class="nav-item{f:if(condition:'{item.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown')}">
+                <f:render partial="Navigation/General/Elements/Link" arguments="{item: item, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+        </f:else>
+    </f:if>
+</f:if>
+<f:if condition="{subitem}">
+    <f:if condition="{subitem.spacer} || {subitem.current}">
+        <f:then>
+            <li class="nav-item{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-submenu')} {f:if(condition:subitem.current, then:'active')}{f:if(condition:subitem.spacer, then:' spacer')}">
+                <f:render partial="Navigation/General/Elements/Link" arguments="{subitem: subitem, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+        </f:then>
+        <f:else if="{item.active}">
+            <li class="nav-item{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-submenu')} {f:if(condition:subitem.active, then:'active')}">
+                <f:render partial="Navigation/General/Elements/Link" arguments="{subitem: subitem, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+        </f:else>
+        <f:else>
+            <li class="nav-item{f:if(condition:'{subitem.children} && {mainNavigationOnlyFirstLevel} == 0', then:' dropdown-submenu')}">
+                <f:render partial="Navigation/General/Elements/Link" arguments="{subitem: subitem, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+        </f:else>
+    </f:if>
+</f:if>
+
+</html>

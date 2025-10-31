@@ -1,0 +1,19 @@
+page {
+    includeJSFooter {
+        slick = EXT:wb_wmc/Resources/Public/Js/slick.min.js
+        slick.defer = 1
+        slick.compress = 1
+
+        magnific-popup = EXT:wb_wmc/Resources/Public/Js/jquery.magnific-popup.min.js
+        magnific-popup.defer = 1
+        magnific-popup.compress = 1
+
+        contentelements = EXT:wb_wmc/Resources/Public/Js/contentelements.min.js
+        contentelements.defer = 1
+        contentelements.compress = 1
+
+        sliding-effect = EXT:wb_wmc/Resources/Public/Js/slidingeffect.js
+        sliding-effect.defer = 1
+        sliding-effect.compress = 1
+    }
+}

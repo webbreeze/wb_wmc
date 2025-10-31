@@ -1,0 +1,25 @@
+.copyright {
+  display: table-caption;
+  caption-side: bottom;
+  text-align: right;
+  font-size: smaller;
+  padding-top: 0.5rem;
+}
+
+.ce-column {
+  margin-bottom: 10px;
+}
+
+.ce-column {
+  width: 100%;
+}
+
+figure.image {
+  min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .ce-column {
+    width: inherit;
+  }
+}

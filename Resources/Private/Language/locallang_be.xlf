@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+   <file source-language="en" datatype="plaintext" original="messages" date="2020-02-11T00:00:00Z" product-name="wb_wmc">
+      <header/>
+      <body>
+         <trans-unit id="contentlink" xml:space="preserve">
+            <source>Link of the whole content element</source>
+         </trans-unit>
+         <trans-unit id="link" xml:space="preserve">
+            <source>Link</source>
+         </trans-unit>
+
+         <trans-unit id="cols" xml:space="preserve">
+            <source>Columns</source>
+         </trans-unit>
+         <trans-unit id="background" xml:space="preserve">
+            <source>Background</source>
+         </trans-unit>
+         <trans-unit id="none" xml:space="preserve">
+            <source>None</source>
+         </trans-unit>
+         <trans-unit id="backgroundimage" xml:space="preserve">
+            <source>Background image</source>
+         </trans-unit>
+         <trans-unit id="parallaximage" xml:space="preserve">
+            <source>Parallax image</source>
+         </trans-unit>
+         <trans-unit id="tiles" xml:space="preserve">
+            <target>Display as tiles</target>
+         </trans-unit>
+         <trans-unit id="slider" xml:space="preserve">
+            <source>Display as slider</source>
+         </trans-unit>
+         <trans-unit id="slidestoshow" xml:space="preserve">
+            <source>Slides to show</source>
+         </trans-unit>
+         <trans-unit id="accordion" xml:space="preserve">
+            <source>Display as accordion</source>
+         </trans-unit>
+         <trans-unit id="fullwidth" xml:space="preserve">
+            <source>Full width</source>
+         </trans-unit>
+
+         <trans-unit id="display" xml:space="preserve">
+            <source>Display</source>
+         </trans-unit>
+         <trans-unit id="parallaximage" xml:space="preserve">
+            <source>Parallax image</source>
+         </trans-unit>
+         <trans-unit id="effects" xml:space="preserve">
+            <source>Effects</source>
+         </trans-unit>
+         <trans-unit id="ease" xml:space="preserve">
+            <source>Ease effect when hovering</source>
+         </trans-unit>
+
+         <trans-unit id="tiles.title" xml:space="preserve">
+            <source>Tiles</source>
+         </trans-unit>
+         <trans-unit id="tiles.description" xml:space="preserve">
+            <source>Places several tiles next to each other.</source>
+         </trans-unit>
+
+         <trans-unit id="parallax.title" xml:space="preserve">
+            <source>Parallax</source>
+         </trans-unit>
+         <trans-unit id="parallax.description" xml:space="preserve">
+            <source>Display content elements with parallax effect.</source>
+         </trans-unit>
+
+         <trans-unit id="slider.description" xml:space="preserve">
+            <source>Display content elements within a slider.</source>
+         </trans-unit>
+         <trans-unit id="sliderfullwidth" xml:space="preserve">
+            <source>Slider full width</source>
+         </trans-unit>
+
+         <trans-unit id="contentelements" xml:space="preserve">
+            <source>Content elements</source>
+         </trans-unit>
+
+         <trans-unit id="container.display.title" xml:space="preserve">
+            <source>Special presentation</source>
+         </trans-unit>
+         <trans-unit id="container.display.description" xml:space="preserve">
+            <source>All content elements in this container can be specially displayed.</source>
+         </trans-unit>
+         <trans-unit id="container.grid-50-50.title" xml:space="preserve">
+            <source>Grid 50/50</source>
+         </trans-unit>
+         <trans-unit id="container.grid-50-50.description" xml:space="preserve">
+            <source>Container for splitting content elements in two columns (50/50).</source>
+         </trans-unit>
+         <trans-unit id="container.grid-30-70.title" xml:space="preserve">
+            <source>Grid 30/70</source>
+         </trans-unit>
+         <trans-unit id="container.grid-30-70.description" xml:space="preserve">
+            <source>Container for splitting content elements in two columns (30/70).</source>
+         </trans-unit>
+         <trans-unit id="container.grid-70-30.title" xml:space="preserve">
+            <source>Grid 70/30</source>
+         </trans-unit>
+         <trans-unit id="container.grid-70-30.description" xml:space="preserve">
+            <source>Container for splitting content elements in two columns (70/30).</source>
+         </trans-unit>
+
+         <trans-unit id="rte_stylesSet.smaller" xml:space="preserve">
+            <source>Smaller font</source>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_page_in_same_tab" xml:space="preserve">
+            <source>Opens the page in same tab.</source>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_file_in_new_tab" xml:space="preserve">
+            <source>Opens the file in a new tab.</source>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_page_in_new_tab" xml:space="preserve">
+            <source>Opens the page in a new tab.</source>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_your_mail_program" xml:space="preserve">
+            <source>Opens the email program.</source>
+         </trans-unit>
+         <trans-unit id="rte_titleText.opens_your_phone_service" xml:space="preserve">
+            <source>Opens the phone app or phone service.</source>
+         </trans-unit>
+         <trans-unit id="rte_class.btn" xml:space="preserve">
+            <source>Button</source>
+         </trans-unit>
+         <trans-unit id="rte_class.btn-full-width" xml:space="preserve">
+            <source>Button full width</source>
+         </trans-unit>
+
+         <trans-unit id="tceform.layout.10" xml:space="preserve">
+            <source>Infobox</source>
+         </trans-unit>
+         <trans-unit id="tceform.layout.20" xml:space="preserve">
+            <source>Testimonial</source>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="collapse navbar-collapse" id="mainmenu">
+    <f:if condition="{mainNavigation}">
+        <ul class="navbar-nav ml-auto smooth-scroll">
+            <f:for each="{mainNavigation}" as="item">
+                <f:render partial="Navigation/General/Elements/Item" arguments="{item: item, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+                <f:if condition="{item.children} && {mainNavigationOnlyFirstLevel} == '0'">
+                    <f:render partial="Navigation/General/Submenu" arguments="{submenu: item.children, mainNavigationOnlyFirstLevel: mainNavigationOnlyFirstLevel}"/>
+                </f:if>
+                </li>
+            </f:for>
+        </ul>
+    </f:if>
+</div>
+
+</html>

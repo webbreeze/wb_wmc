@@ -1,0 +1,9 @@
+page {
+    includeCSS {
+        maginific-popup = EXT:wb_wmc/Resources/Public/Css/magnific-popup.min.css
+        contentelements = EXT:wb_wmc/Resources/Public/Css/contentelements.css
+
+        bootstrap = EXT:wb_wmc/Resources/Private/Sass/Contentelements.scss
+        bootstrap.outputfile = EXT:wb_wmc/Resources/Public/Css/contentelements.css
+    }
+}

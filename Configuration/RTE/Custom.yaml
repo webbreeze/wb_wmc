@@ -1,0 +1,68 @@
+# Import basic configuration
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Full.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+toolbar:
+  - [ 'ckeditor_fa5' ]
+
+editor:
+  config:
+    stylesSet:
+      - { name: "LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_stylesSet.smaller", element: "p", attributes: { class: "smaller"}}
+
+classesAnchor:
+  page-btn:
+    class: 'btn'
+    type: 'page'
+    titleText: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_titleText.opens_page_in_same_tab'
+
+  page-btn-full-width:
+    class: 'btn btn-full-width'
+    type: 'page'
+    titleText: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_titleText.opens_page_in_same_tab'
+
+  file-btn:
+    class: 'btn'
+    type: 'file'
+    titleText: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_titleText.opens_file_in_new_tab'
+
+  file-btn-full-width:
+    class: 'btn btn-full-width'
+    type: 'file'
+    titleText: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_titleText.opens_file_in_new_tab'
+
+  url-btn:
+    class: 'btn'
+    type: 'url'
+    target: '_blank'
+    titleText: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_titleText.opens_page_in_new_tab'
+
+  url-btn-full-width:
+    class: 'btn btn-full-width'
+    type: 'url'
+    target: '_blank'
+    titleText: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_titleText.opens_page_in_new_tab'
+
+  mail-btn:
+    class: 'btn'
+    type: 'mail'
+    titleText: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_titleText.opens_your_mail_program'
+
+  mail-btn-full-width:
+    class: 'btn btn-full-width'
+    type: 'mail'
+    titleText: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_titleText.opens_your_mail_program'
+
+buttons:
+  link:
+    properties:
+      class:
+        allowedClasses: 'btn,btn btn-full-width'
+
+classes:
+  'btn':
+    name: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_class.btn'
+  'btn btn-full-width':
+    name: 'LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:rte_class.btn-full-width'
