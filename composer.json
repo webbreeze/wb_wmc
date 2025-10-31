@@ -6,7 +6,7 @@
   "homepage": "https://webbreeze.de",
   "license": "GPL-2.0-or-later",
   "require": {
-    "b13/container": "^2.3"
+    "b13/container": "^3.1"
   },
   "replace": {
     "webbreeze/wb_wmc": "self.version"
