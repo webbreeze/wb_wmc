@@ -1,14 +1,13 @@
 main {
-  min-width: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   color: #333;
-  padding-inline-start: 2rem;
-  padding-inline-end: 2rem;
+  margin: auto;
+  width: 100%;
 
   h1 {
+    font-weight: normal;
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -17,7 +16,17 @@ main {
   }
 
   h2, h3, h4, h5, h6 {
-    color: #059F9C;
+    font-weight: normal;
+    position: relative;
+
+    &:before {
+      border-top: 3px solid #bca15b;
+      content: '';
+      position: absolute;
+      top: calc(50%);
+      left: -2030px;
+      width: 2000px;
+    }
   }
 
   p {
@@ -26,28 +35,33 @@ main {
 
   a {
     &:link, &:visited {
-      color: #336263 !important;
+      color: #bca15b !important;
       span {
-        color: #336263 !important;
+        color: #bca15b !important;
       }
     }
 
     &:hover, &:active {
-      color: #54f2ff !important;
+      color: #bca15b !important;
       span {
-        color: #54f2ff !important;
+        color: #bca15b !important;
       }
     }
   }
 
-  .ce-gallery {
-    figcaption {
-      padding-top: 1rem;
-    }
+  .frame-default:nth-of-type(1) {
+    position: relative;
 
-    .image-embed-item {
-      width: 100%;
-      height: auto;
+    &:after {
+      content: "";
+      width: 260px;
+      height: 150px;
+      background: url('https://wmc.ddev.site/fileadmin/Schmuckbilder/muster.svg') no-repeat;
+      top: 10px;
+      right: -145px;
+      position: absolute;
+      display: inline-block;
+      z-index: -99999;
     }
   }
 }

@@ -2,8 +2,12 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  font-weight: lighter;
 
   &.navbar-expand-md {
+    align-items: center;
+    justify-content: center;
+
     .navbar-toggler {
       width: auto;
       padding: 0;
@@ -31,7 +35,6 @@ nav {
       top: 6rem;
       text-align: right;
       background-color: #fff;
-      width: 100%;
       z-index: 999;
     }
   }
@@ -40,15 +43,13 @@ nav {
     font-size: 30px;
 
     .navbar-nav {
-      padding-inline-end: 2rem;
-      border-bottom-width: 3px;
-      border-bottom-style: solid;
-      border-color: #00f1f1;
-      padding-bottom: 25px;
-      margin-block-end: 0;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 2em;
 
       .nav-item {
         list-style-type: none;
+        font-size: 23px;
 
         &.dropdown {
           .dropdown-menu {
@@ -64,17 +65,17 @@ nav {
         }
 
         .nav-link {
-          color: #7be7eb;
+          color: #bca15b;
           text-decoration: none;
 
           &:hover {
-            color: #55a0a2;
+            color: #fff;
           }
         }
 
         &.active {
           .nav-link {
-            color: #40ebe4;
+            color: #bca15b;
           }
         }
       }
@@ -92,8 +93,6 @@ nav {
   nav.navbar-expand-md {
     display: flex;
     position: initial;
-    width: 300px;
-    min-width: 300px;
     padding-inline-end: 1rem;
 
     .navbar-toggler {

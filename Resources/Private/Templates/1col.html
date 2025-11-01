@@ -2,30 +2,55 @@
 
 <f:layout name="Default" />
 
-<f:section name="logo">
-  <div class="container logo">
-    <f:render partial="Header/Logo" arguments="{_all}"/>
-  </div>
-</f:section>
-
-<f:section name="mainNavigation">
-  <nav class="navbar navbar-expand-md wb-navbar-transparent fixed-top">
-    <div class="container">
-      <f:render partial="Header/Toggler" arguments="{_all}"/>
-      <f:render partial="Header/MainNavigation" arguments="{_all}"/>
+<f:section name="header">
+  <header class="wb-header{f:if(condition: '{data.uid} == {startpageUid}', then: ' startpage')} col-12" >
+    <div class="container navigation">
+      <div class="logo">
+        <f:render partial="Header/Logo" arguments="{_all}"/>
+      </div>
+      <nav class="navbar navbar-expand-md wb-navbar-transparent fixed-top">
+        <div class="container">
+          <f:render partial="Header/Toggler" arguments="{_all}"/>
+          <f:render partial="Header/MainNavigation" arguments="{_all}"/>
+        </div>
+      </nav>
     </div>
-  </nav>
+    <div class="wb-intro">
+      <div class="container">
+        <f:if condition="{headerImage}">
+          <div class="headerimage">
+            <f:image image="{headerImage.0.originalFile}" />
+            <span class="copyright">{headerImage.0.properties.title}</span>
+          </div>
+        </f:if>
+        <div class="intro-box row">
+          <div class="col-md-10">
+            <h1 class="text-center">
+              <f:if condition="{data.nav_title}">
+                <f:then>{data.nav_title}</f:then>
+                <f:else>{data.title}</f:else>
+              </f:if>
+              <f:if condition="{company}">
+                <span class="h2 text-center">
+                  {company}
+                </span>
+              </f:if>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </f:section>
 
 <f:section name="Main">
-  <main>
-    <h1><f:if condition="{data.nav_title}"><f:then>{data.nav_title}</f:then><f:else>{data.title}</f:else></f:if></h1>
+  <main class="col-10">
     <f:cObject typoscriptObjectPath="lib.content" data="{colPos: '0'}" />
   </main>
 </f:section>
 
 <f:section name="Footer">
-  <footer>
+  <footer class="col-12">
     <f:render partial="Footer/BackToTop" arguments="{_all}"/>
     <div class="container">
       <div class="row pt-4">

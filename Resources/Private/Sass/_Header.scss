@@ -1,0 +1,49 @@
+header {
+  .navigation {
+    background: #333;
+  }
+
+  .logo {
+    flex-direction: column;
+    justify-content: start;
+    padding: 2rem;
+    width: 250px;
+  }
+
+  .wb-intro {
+    margin-bottom: 4rem;
+
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+      .headerimage {
+        img {
+          min-width: 100%;
+          height: auto;
+        }
+      }
+
+      .intro-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: -100px auto 0 auto;
+        padding: 25px 250px;
+        color: #333;
+        background: #bca15b;
+
+        .text-center {
+          font-weight: normal;
+        }
+
+        .h2 {
+          font-size: 0.75em;
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+}
