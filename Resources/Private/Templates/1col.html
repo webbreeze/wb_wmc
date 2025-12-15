@@ -26,7 +26,7 @@
                 <f:then>{data.nav_title}</f:then>
                 <f:else>{data.title}</f:else>
               </f:if>
-              <f:if condition="{subtitle}">
+              <f:if condition="{data.uid} == {startpageUid} && {subtitle}">
                 <span class="h2 text-center">
                   {subtitle}
                 </span>
