@@ -3,8 +3,8 @@
    <file source-language="en" datatype="plaintext" original="messages" date="2020-02-11T00:00:00Z" product-name="wb_wmc">
       <header/>
       <body>
-         <trans-unit id="dateFormat" xml:space="preserve">
-            <source>%d.%m.%Y</source>
+         <trans-unit id="webbreeze" xml:space="preserve">
+            <source>Webdesign &amp; TYPO3 by <![CDATA[<a href="https://webbreeze.de" title="to WebBreeze" target="_blank">WebBreeze</a>]]></source>
          </trans-unit>
       </body>
    </file>

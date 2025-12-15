@@ -1,13 +1,27 @@
 header {
-  .navigation {
-    background: #333;
+  &.wb-header {
+    height: auto;
   }
+  .navbar {
+    background: #121111;
+    display: flex;
+    padding: .5rem 1rem;
+    align-items: center;
 
-  .logo {
-    flex-direction: column;
-    justify-content: start;
-    padding: 2rem;
-    width: 250px;
+    .navbar-brand {
+      display: inline-block;
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
   }
 
   .wb-intro {
@@ -19,10 +33,21 @@ header {
       flex-direction: column;
       justify-content: start;
 
+      &.col-12 {
+        padding: 0;
+      }
+
       .headerimage {
         img {
           min-width: 100%;
+          max-width: 100%;
           height: auto;
+        }
+
+        @media (min-width: 768px) {
+          img {
+            min-width: 100%;
+          }
         }
       }
 
@@ -30,10 +55,12 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: start;
-        margin: -100px auto 0 auto;
-        padding: 25px 250px;
+        margin: -50px auto 0 auto;
+        padding: 25px 50px;
         color: #333;
-        background: #bca15b;
+        background: $gold;
+        width: 90%;
+        border-radius: 5px;
 
         .text-center {
           font-weight: normal;
@@ -44,6 +71,15 @@ header {
           margin-top: 1em;
         }
       }
+
+      @media (min-width: 1200px) {
+        .intro-box {
+          margin: -100px auto 0 auto;
+          padding: 25px 250px;
+          width: 70%;
+        }
+      }
     }
   }
 }
+

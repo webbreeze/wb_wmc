@@ -1,55 +1,67 @@
 footer {
-  flex-basis: 100%;
-  padding-inline-start: 2rem;
-  margin-block-end: 2rem;
-  color: #bca15b;
+  color: $white;
+  background: rgba(0,0,0,0.9);
 
-  .container .row {
-    display: flex;
-
-    .list-inline {
-      .nav-item {
-        display: inline;
-        margin-right: 10px;
-
-        .nav-link {
-          text-decoration: none;
-
-          span {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
-
-  .col-4, .col-8 {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+  > .container {
+    display: block !important;
   }
 
   a {
-    color: #bca15b;
+    color: $white;
 
-    &#back-to-top {
-      background-color: #bca15b;
-      border-color: #bca15b;
+    &:hover {
+      color: $gold;
+    }
+  }
+
+  .copyright {
+    padding: .5rem 0;
+    display: block;
+    text-align: inherit;
+    font-size: .9rem;
+  }
+
+  .col-8 {
+    .justify-content-end {
+      text-align: end;
+    }
+  }
+
+  .nav-item {
+    margin-right: .5rem;
+    margin-left: .5rem;
+    padding-right: 0;
+    padding-left: 0;
+    text-transform: uppercase;
+
+    &.active a {
+      color: $gold;
+      text-decoration: underline;
+    }
+
+    .nav-link {
+      padding: .5rem 0;
+    }
+  }
+
+  #back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+
+    &.btn-primary {
+      background-color: $gold;
+      border-color: $gold;
       line-height: initial;
       padding: 10px 12px;
       border-radius: 2.3rem;
-      width: 2rem;
-      height: 2rem;
-      z-index: 888;
-      cursor: pointer;
-      position: fixed;
-      bottom: 1rem;
-      right: 1rem;
+      width: 55px;
+      height: 55px;
+      z-index: 999999;
 
-      svg {
-        width: 2rem;
-        height: 2rem;
-        color: #fff;
+      &:focus {
+        box-shadow: none;
       }
     }
   }

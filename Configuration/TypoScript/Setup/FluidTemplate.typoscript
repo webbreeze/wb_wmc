@@ -3,5 +3,10 @@ page {
         templateRootPaths.20 = EXT:wb_wmc/Resources/Private/Templates/
         partialRootPaths.20 = EXT:wb_wmc/Resources/Private/Partials/
         layoutRootPaths.20 = EXT:wb_wmc/Resources/Private/Layouts/
+
+        variables {
+            subtitle = TEXT
+            subtitle.value = {$subtitle}
+        }
     }
 }

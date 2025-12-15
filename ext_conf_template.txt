@@ -1,0 +1,2 @@
+# cat=Company; type=string; label=LLL:EXT:wb_wmc/Resources/Private/Language/locallang_be.xlf:subtitle
+subtitle = Untertitel

@@ -1,0 +1,17 @@
+.slick-slide {
+  padding: 15px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 25px;
+  color: $gold;
+  opacity: 1;
+}
+
+.slick-dots {
+  li, li.slick-active {
+    button:before {
+      color: $gold;
+    }
+  }
+}

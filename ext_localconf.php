@@ -14,6 +14,9 @@ call_user_func(
         $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 
         $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = 'EXT:wb_wmc/Configuration/RTE/Custom.yaml';
+
+        $extensionConfiguration = TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class)->get('wb_wmc');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('subtitle=' . $extensionConfiguration['subtitle']);
     }
 );
 

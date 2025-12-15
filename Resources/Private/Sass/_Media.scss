@@ -10,17 +10,27 @@
   margin-top: 10px;
 }
 
-.ce-column {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
+.ce-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: visible;
 
-.ce-column {
-  width: 100%;
-}
+  .ce-row {
+    display: flex;
+    gap: 1rem;
+    overflow: visible;
 
-figure.image {
-  min-width: 100%;
+    .ce-column {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+
+      figure.image img {
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {

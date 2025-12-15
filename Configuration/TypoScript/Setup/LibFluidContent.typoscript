@@ -1,15 +1,6 @@
 lib {
 	contentElement {
-		settings.media.popup {
-            linkParams.ATagParams.dataWrap = class="lightbox" rel="lightbox[{file:current:uid_foreign}]" data-image-description="{file:current:description}"
-            directImageLink = 1
-            JSwindow = 0
-            wrap >
-        }
-
         partialRootPaths.200 = EXT:wb_wmc/Resources/Private/Partials/
 	}
 }
-
-page.config.contentObjectExceptionHandler = 0
 

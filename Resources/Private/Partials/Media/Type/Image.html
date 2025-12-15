@@ -9,9 +9,9 @@
         <f:else>
             <f:if condition="{data.image_zoom}">
                 <f:then>
-                    <ce:link.clickEnlarge image="{file}" configuration="{settings.media.popup}">
+                    <f:link.typolink parameter="/fileadmin/{file.originalFile.identifier}" title="{file.title}" additionalAttributes="{data-lightbox:'{data.tx_container_parent}',data-title='{file.title}'}">
                         <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
-                    </ce:link.clickEnlarge>
+                    </f:link.typolink>
                 </f:then>
                 <f:else>
                     <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />

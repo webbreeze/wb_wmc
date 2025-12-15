@@ -1,10 +1,10 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  margin: auto;
+  background-color: $sand !important;
+  font-family: 'Poppins-ExtraLight', sans-serif !important;
+  color: $textcolor;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  padding-top: 5rem;
 
   .col-1 {
     width: 8.333333333333333%;
@@ -43,7 +43,13 @@ body {
   }
 
   .col-10 {
-    width: 83.333333333333333%;
+    width: 95% !important;
+  }
+
+  @media (min-width: 768px) {
+    .col-10 {
+      width: 83.333333333333333%;
+    }
   }
 
   .col-11 {
@@ -59,5 +65,15 @@ body {
     flex-direction: column;
     justify-content: start;
     text-align: center;
+  }
+}
+
+.col-10 {
+  max-width: 95% !important;
+}
+
+@media (min-width: 768px) {
+  .col-10 {
+    max-width: 83.333333333333333%;
   }
 }

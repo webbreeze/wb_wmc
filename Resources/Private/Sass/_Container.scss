@@ -1,3 +1,29 @@
-.container {
-  display: flex !important;
+.frame-type-grid-50-50 > .container {
+  margin-top: 0 !important;
+}
+
+.tiles{
+  .tile > .frame, .col-12 > a {
+    display: block;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 5px;
+    height: 100%;
+    position: relative;
+    padding: 3rem !important;
+
+    .container {
+      padding: 0 !important;
+    }
+  }
+
+  .tile {
+    .container .col-12, .col-12 > .object {
+      background: none;
+      box-shadow: none;
+      border: none;
+      padding: 0;
+      border-radius: 0;
+    }
+  }
 }
