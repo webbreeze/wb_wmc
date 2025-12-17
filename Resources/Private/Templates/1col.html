@@ -20,7 +20,7 @@
           </div>
         </f:if>
         <div class="intro-box row">
-          <div class="col-md-10">
+          <div>
             <h1 class="text-center">
               <f:if condition="{data.nav_title}">
                 <f:then>{data.nav_title}</f:then>
@@ -50,10 +50,10 @@
     <f:render partial="Footer/BackToTop" arguments="{_all}"/>
     <div class="container">
       <div class="row pt-4">
-        <div class="col-4">
+        <div class="col-8">
           <f:render partial="Footer/Copyright" arguments="{_all}"/>
         </div>
-        <div class="col-8">
+        <div class="col-4">
           <f:render partial="Footer/Navigation" arguments="{_all}"/>
         </div>
       </div>
