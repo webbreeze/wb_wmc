@@ -31,7 +31,7 @@ main {
     position: relative;
 
     &:before {
-      border-top: 3px solid $gold;
+      border-top: 1px solid $gold;
       content: '';
       position: absolute;
       top: calc(50%);
